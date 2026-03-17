@@ -1,0 +1,30 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Remove scroll lateral bugado */
+html,
+body {
+    overflow-x: hidden;
+}
+
+/* Fonte e suavização */
+body {
+    font-family: Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Links padrão */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Imagens responsivas */
+img {
+    max-width: 100%;
+    display: block;
+}

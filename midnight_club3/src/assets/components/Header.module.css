@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px; /* 🔥 levemente menor */
+    background: #0d0d0d;
+    border-bottom: 2px solid #ff00cc;
+}
+
+/* CONTAINER DO LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+/* IMAGEM DO LOGO */
+.logoImg {
+    height: 45px; /* 🔥 controla o tamanho real */
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 0 6px #ff00cc); /* glow opcional */
+}
+
+/* NAV */
+.nav {
+    display: flex;
+    gap: 18px;
+}
+
+/* LINKS */
+.link {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 0.70rem;
+    transition: 0.3s;
+    position: relative;
+}
+
+.link:hover {
+    color: #ff00cc;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -4px;
+    left: 0;
+    background: #ff00cc;
+    transition: 0.3s;
+}
+
+.link:hover::after {
+    width: 100%;
+}
+
+
+/* ============================= */
+/* 📱 RESPONSIVIDADE (HEADER) */
+/* ============================= */
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+
+    .logoImg {
+        height: 38px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .link {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .logoImg {
+        height: 32px;
+    }
+
+    .nav {
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .link {
+        font-size: 0.7rem;
+    }
+}
