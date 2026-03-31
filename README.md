@@ -4,16 +4,10 @@ Projeto front-end inspirado no universo de corridas urbanas, apresentando alguns
 
 ---
 
-## 📸 Preview
-
-Interface moderna com estilo neon, exibindo carros em cards responsivos com design limpo e visual inspirado em corridas de rua.
-
----
-
 ## 🚀 Tecnologias utilizadas
 
 * ⚛️ React
-* 🎨 CSS3 (com responsividade)
+* 🎨 CSS
 * 📦 Vite
 
 ---
